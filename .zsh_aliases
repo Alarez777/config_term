@@ -1,7 +1,6 @@
 alias extensionsaf='/Users/alarez/Library/Containers/com.apple.Safari/Data/Library/Safari'
 alias fkill="fkill -v"
 alias nas='TERM=xterm-256color ssh -i ~/.ssh/nas Alarez777@192.168.2.15 -p 2225'
-alias copiar="xclip -f -sel clip"
 alias ll='ls -lh'
 alias lla='ls -lha'
 alias sd='sudo'
