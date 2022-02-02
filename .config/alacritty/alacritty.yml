@@ -17,7 +17,7 @@ window:
 tabspaces: 4
 mouse_bindings:
   - { mouse: Right, action: PasteSelection }
-
+  
 selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
@@ -120,7 +120,6 @@ colors:
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-
 cursor:
   style:
     shape: Underline
