@@ -126,5 +126,5 @@ export PATH="'$HOME/Library/Python/3.9/bin':$HOME/.yarn/bin:$HOME/.config/yarn/g
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
