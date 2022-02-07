@@ -5,6 +5,9 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+#/usr/local/share/zsh/site-functions
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$(brew --prefix findutils)/libexec/gnubin:$PATH"
@@ -18,9 +21,11 @@ export TERM="xterm-256color"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
-
-plugins=(rsync brew git tldr colored-man-pages colorize history pip zsh-autosuggestions zsh-syntax-highlighting)
-
+plugins=(brew git tldr colored-man-pages zsh-autosuggestions zsh-syntax-highlighting vi-mode)
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
+#MODE_INDICATOR="%F{white}+%f"
+#INSERT_MODE_INDICATOR="%F{yellow}+%f"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -125,6 +130,4 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="'$HOME/Library/Python/3.9/bin':$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/Cellar/node/16.4.2/bin/:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
