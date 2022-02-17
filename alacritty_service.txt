@@ -1,0 +1,5 @@
+if [ -d "$1" ]; then
+	/Applications/Alacritty.app/Contents/MacOS/alacritty --working-directory="$1"
+else
+	/Applications/Alacritty.app/Contents/MacOS/alacritty --working-directory="$(dirname $1)"
+fi
