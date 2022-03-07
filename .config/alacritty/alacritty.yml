@@ -1,125 +1,62 @@
+alt_send_esc: false
+colors:
+  bright:
+    black: '#928374'
+    blue: '#076678'
+    cyan: '#427b58'
+    green: '#79740e'
+    magenta: '#8f3f71'
+    red: '#9d0006'
+    white: '#3c3836'
+    yellow: '#b57614'
+  normal:
+    black: '#fbf1c7'
+    blue: '#458588'
+    cyan: '#689d6a'
+    green: '#98971a'
+    magenta: '#b16286'
+    red: '#cc241d'
+    white: '#7c6f64'
+    yellow: '#d79921'
+  primary:
+    background: '#fbf1c7'
+    foreground: '#3c3836'
+cursor:
+  style:
+    blinking: Always
+    shape: Underline
 env:
   TERM: xterm-256color
-window:
-  opacity: 0.95
-  dimensions:
-    columns: 300
-    lines: 100
-  startup_mode: Windowed
-  decorations: full
-  #Window title
-  title: Alacritty
-  dynamic_title: true
-  padding:
-    x: 4
-    y: 1
-  dynamic_padding: false
-alt_send_esc: false
-tabspaces: 4
-mouse_bindings:
-  - { mouse: Right, action: PasteSelection }
-selection:
-  # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: true
 font:
-  size: 19.0
-  normal:
-    # Font name
-    family: "MesloLGS NF"
-    style: Regular
   bold:
-    family: "MesloLGS NF"
+    family: MesloLGS NF
     style: Bold
   italic:
-    family: "MesloLGS NF"
+    family: MesloLGS NF
     style: Italic
-# Colors (Pink Moon)
-colors:
-  # Default colors
-  primary:
-    background: '0x210101'
-    foreground: '0xb2b7bd'
-    # (Optional) Bright and Dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #
-    # dim_foreground: '0x9a9a9a'
-    # bright_foreground: '0xffffff'
-
-
-  # Normal colors
   normal:
-    black:   '0x0a1222'
-    red:     '0xf185a9'
-    green:   '0x85cc95'
-    yellow:  '0xffcb8b'
-    blue:    '0x8dabe1'
-    magenta: '0xc761d9'
-    cyan:    '0x78ccf0'
-    white:   '0xffffff'
-
-  # Bright colors
-  bright:
-    black:   '0x575656'
-    red:     '0xe7a7bc'
-    green:   '0x85cc95'
-    yellow:  '0xffcb8b'
-    blue:    '0x8dabe1'
-    magenta: '0xc792eb'
-    cyan:    '0xffa7c4'
-    white:   '0xffffff'
-
-  # Dim colors (Optional)
-  #dim:
-  #  black:   '0x333333'
-  #  red:     '0xf2777a'
-  #  green:   '0x99cc99'
-  #  yellow:  '0xffcc66'
-  #  blue:    '0x6699cc'
-  #  magenta: '0xcc99cc'
-  #  cyan:    '0x66cccc'
-  #  white:   '0xdddddd'
-
-
-  # Optional: Colors the cursor will use (test)
-  cursor:
-    text: '0xfeffff'
-    # cursor: '0x71798a'
-    # cursor: '0xF0FDFF'
-    # cursor: '0xe6d3c6'
-    cursor: '0xffa7c4'
-
-  selection:
-    text: '0x2a2e38'
-    cursor: '0xF0FDFF'
-# Visual Bell
-#
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
-# rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
-# configure the transition function by setting the `animation` property.
-#
-# Possible values for `animation`
-# `Ease`
-# `EaseOut`
-# `EaseOutSine`
-# `EaseOutQuad`
-# `EaseOutCubic`
-# `EaseOutQuart`
-# `EaseOutQuint`
-# `EaseOutExpo`
-# `EaseOutCirc`
-# `Linear`
-#
-# To completely disable the visual bell, set its duration to 0.
-#
+    family: MesloLGS NF
+    style: Regular
+  size: 19.0
+mouse_bindings:
+- action: PasteSelection
+  mouse: Right
+selection:
+  save_to_clipboard: true
+tabspaces: 4
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-cursor:
-  style:
-    shape: Underline
-    blinking: Always
+window:
+  decorations: full
+  dimensions:
+    columns: 300
+    lines: 100
+  dynamic_padding: false
+  dynamic_title: true
+  opacity: 0.95
+  padding:
+    x: 4
+    y: 1
+  startup_mode: Windowed
+  title: Alacritty
