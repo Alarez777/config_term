@@ -3,10 +3,10 @@ so ~/.vim/maps.vim
 so ~/.vim/plugins-config.vim
 
 "TEMA
-colorscheme solarized
-set background=light     " Usa modo obscuro
-"set background=dark     " Usa modo obscuro
-"colorscheme dracula
+"colorscheme solarized
+"set background=light     " Usa modo obscuro
+set background=dark     " Usa modo obscuro
+colorscheme dracula
 "set background=dark     " Usa modo obscuro
 "Funcionamiento general
 set nocompatible        " Activar modo de no compatibilidad con vi

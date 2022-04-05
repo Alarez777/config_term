@@ -1,26 +1,26 @@
 alt_send_esc: false
 colors:
   bright:
-    black: '#928374'
-    blue: '#076678'
-    cyan: '#427b58'
-    green: '#79740e'
-    magenta: '#8f3f71'
-    red: '#9d0006'
-    white: '#3c3836'
-    yellow: '#b57614'
+    black: '0x575656'
+    blue: '0x8dabe1'
+    cyan: '0xffa7c4'
+    green: '0x85cc95'
+    magenta: '0xc792eb'
+    red: '0xe7a7bc'
+    white: '0xffffff'
+    yellow: '0xffcb8b'
   normal:
-    black: '#fbf1c7'
-    blue: '#458588'
-    cyan: '#689d6a'
-    green: '#98971a'
-    magenta: '#b16286'
-    red: '#cc241d'
-    white: '#7c6f64'
-    yellow: '#d79921'
+    black: '0x0a1222'
+    blue: '0x8dabe1'
+    cyan: '0x78ccf0'
+    green: '0x85cc95'
+    magenta: '0xc761d9'
+    red: '0xf185a9'
+    white: '0xebebeb'
+    yellow: '0xffcb8b'
   primary:
-    background: '#fbf1c7'
-    foreground: '#3c3836'
+    background: '0x210101'
+    foreground: '0xb2b7bd'
 cursor:
   style:
     blinking: Always
