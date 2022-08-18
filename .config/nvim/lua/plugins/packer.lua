@@ -58,11 +58,35 @@ use {
     -- fuzzy finder
   use 'ibhagwan/fzf-lua'
   -- optional for icon support
-  requires = { 'kyazdani42/nvim-web-devicons' }
     -- treesitter interface
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/nvim-tree-docs'
   use 'p00f/nvim-ts-rainbow'
-
+--LSP
+use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+    'folke/lsp-colors.nvim',
+}
+use {
+    'folke/trouble.nvim',
+    requires = {
+        'kyazdani42/nvim-web-devicons',
+    }
+  }
+require("trouble").setup {
+}
+require("lsp-colors").setup({
+  Error = "#db4b4b",
+  Warning = "#e0af68",
+  Information = "#0db9d7",
+  Hint = "#10B981"
+})
+--Colors Hexadecimal
+use 'norcalli/nvim-colorizer.lua'
+require'colorizer'.setup()
+--TagViewer
+-- tagviewer
+use 'liuchengxu/vista.vim'
 end)
 

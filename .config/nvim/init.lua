@@ -13,4 +13,5 @@ require('plugins/hop')
 require('plugins/nvim-autopairs')
 require('plugins/ale')
 require('plugins/nvim-treesitter')       -- resaltado de sintaxys
-
+require('plugins/nvim-lsp-installer')
+require('plugins/vista')
