@@ -14,7 +14,8 @@ export PATH="$(brew --prefix findutils)/libexec/gnubin:$PATH"
 export MANPATH="$(brew --prefix findutils)/libexec/gnuman:$MANPATH"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alarez/.oh-my-zsh"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+#export TERM="screen-256color"
 export DISABLE_AUTO_TITLE='true'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
