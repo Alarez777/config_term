@@ -1,0 +1,31 @@
+# Colors (Pink Moon)
+colors:
+  # Default colors
+  primary:
+    background: '0x210101'
+    foreground: '0xb2b7bd'
+
+  # Modo oscuro
+  # Normal colors
+  normal:
+    black:   '0x0a1222'
+    red:     '0xf185a9'
+    green:   '0x85cc95'
+    yellow:  '0xffcb8b'
+    blue:    '0x8dabe1'
+    magenta: '0xc761d9'
+    cyan:    '0x78ccf0'
+    white:   '0xebebeb'
+
+  # Bright colors
+  bright:
+    black:   '0x575656'
+    red:     '0xe7a7bc'
+    green:   '0x85cc95'
+    yellow:  '0xffcb8b'
+    blue:    '0x8dabe1'
+    magenta: '0xc792eb'
+    cyan:    '0xffa7c4'
+    white:   '0xffffff'
+
+
