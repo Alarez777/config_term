@@ -134,3 +134,4 @@ export PATH="'$HOME/Library/Python/3.9/bin':$HOME/.yarn/bin:$HOME/.config/yarn/g
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export PATH="/usr/local/opt/python@3.11/libexec/bin:$PATH"
