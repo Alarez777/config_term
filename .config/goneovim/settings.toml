@@ -1,0 +1,8 @@
+[Editor]
+  FontFamily = "MesloLGS Nerd Font"
+  FontSize = 19
+  StartFullscreen = false
+  StartMaximizedWindow = true
+  #  IgnoreSaveConfirmationWithCloseButton = true
+  SmoothScroll = true
+
