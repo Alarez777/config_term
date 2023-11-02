@@ -28,13 +28,13 @@ env:
   TERM: xterm-256color
 font:
   bold:
-    family: MesloLGS NF
+    family: MesloLGS Nerd Font
     style: Bold
   italic:
-    family: MesloLGS NF
+    family: MesloLGS Nerd Font
     style: Italic
   normal:
-    family: MesloLGS NF
+    family: MesloLGS Nerd Font
     style: Regular
   size: 19.0
 mouse_bindings:
