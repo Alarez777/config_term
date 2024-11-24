@@ -1,15 +1,14 @@
 "Plugins de vim -----------------------------------
 call plug#begin('~/.vim/plugged')
 	"Temas
-	Plug 'skbolton/embark' " Theme embark
+	"Plug 'skbolton/embark' " Theme embark
 	Plug 'dracula/vim', { 'name': 'dracula' } " Theme dracula
-	Plug 'ayu-theme/ayu-vim' " Theme ayu
-	Plug 'morhetz/gruvbox' " Theme gruvbox
-	Plug 'sonph/onehalf', { 'rtp': 'vim' } "Theme onehalf
-	Plug 'ayu-theme/ayu-vim' " or other package manager
+	"Plug 'ayu-theme/ayu-vim' " Theme ayu
+	"Plug 'morhetz/gruvbox' " Theme gruvbox
+	"Plug 'sonph/onehalf', { 'rtp': 'vim' } "Theme onehalf
+	"Plug 'ayu-theme/ayu-vim' " or other package manager
 	"IDE
 	"Autocompletado
-	Plug 'sheerun/vim-polyglot' "Resalta Sintaxis de muchos lenguajes
 	if has('nvim') || has('patch-8.0.902')
 		" Indica si se agrego o quito una linea
 		Plug 'mhinz/vim-signify'
@@ -18,10 +17,11 @@ call plug#begin('~/.vim/plugged')
 	endif
 	"Plug 'ervandew/supertab' "Permite usar tab en Autocompletado
 	"Plug 'vim-test/vim-test' "Permite testear codigo
-	Plug 'dense-analysis/ale' "Analizador de errores
+	"Plug 'dense-analysis/ale' "Analizador de errores
+	"Plug 'ryanoasis/vim-devicons' "Proporciona iconos de distions lenguajes y archivos
+	"Plug 'sheerun/vim-polyglot' "Resalta Sintaxis de muchos lenguajes
 	"Tmux
 	Plug 'christoomey/vim-tmux-navigator' "Permite moverse entre ventanas con ctrl h o l 
-	Plug 'ryanoasis/vim-devicons' "Proporciona iconos de distions lenguajes y archivos
 	Plug 'ap/vim-buftabline' "Muestra los buffer como tabs
 	Plug 'jiangmiao/auto-pairs' "Permite usar autocompletado de parentesis
 	Plug 'tpope/vim-surround' "Permite seleccionar un texto y ponerle un caracter
