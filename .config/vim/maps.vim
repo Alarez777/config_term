@@ -2,9 +2,6 @@ let mapleader=" "
 
 "Reload
 nnoremap <Leader>R :so $MYVIMRC<CR>
-" Testfile
-nnoremap <Leader>T :TestFile<CR>
-nnoremap <Leader>TT :TestSuite<CR>
 
 " split resize
 nnoremap <Leader>> 10<C-w>>
@@ -15,39 +12,31 @@ nmap <Leader>; $a:<Esc>o
 
 " Guardar y salir
 nmap <Leader>w :w<CR>
-nnoremap <leader>q :bd<CR>
-nnoremap <leader>Q :q!<CR>
+nnoremap <leader>c :bd<CR>
+nnoremap <leader>q :q<CR>
 
 " Mover
-nmap <Tab><Tab> :Files<CR>
-nmap <Leader>ag :Ag<CR>
-nmap <Tab><Tab><Tab> :Lines<CR>
-nmap <Leader>t :NERDTreeFind<CR>
-nmap <Leader>ty :NERDTree<CR>
+"Permite buscar archivos y abrirlos
+nmap <Tab><Tab> :Files<CR> 
+nmap <Leader>e :NERDTreeFind<CR>
 
-"Kite
-nmap <Leader>g :KiteGotoDefinition<CR>
-nmap <Leader>gd :KiteDocsAtCursor<CR>
 
 "Movimiento en documento
-nmap <Leader>s <Plug>(easymotion-overwin-f2)
-nmap <Leader>k <Plug>(easymotion-overwin-line)
-nmap <C-j> 10<C-e>
-nmap <C-k> 10<C-y>
+nmap <Leader>m <Plug>(easymotion-overwin-f)
+nmap <Leader>, <Plug>(easymotion-overwin-line)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 " Cambio buffer
-nmap <Leader>l :bnext<CR> 
-nmap <Leader>h :bprevious<CR> 
+nmap <Tab>l :bnext<CR> 
+nmap <Tab>h :bprevious<CR> 
 
 " tmux navigator
-nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 "tnoremap <Esc> <C-\><C-n> "Permite presionar esc en terminal
-
-" buffers
-map <Leader>ob :Buffers<cr>
 
 "tabulacion
 vmap <Tab> >gv
@@ -69,12 +58,6 @@ nnoremap <C-t> :call OpenTerminal()<CR>
 
 " Iniciar documento
 nmap <Leader>x :!python3 %<CR>
-
-" Moving text
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-nnoremap <Leader>K :m .-2<CR>==
-nnoremap <Leader>J :m .+1<CR>==
 
 
 "split navigations

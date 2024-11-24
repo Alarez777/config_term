@@ -1,13 +1,16 @@
-so ~/.vim/plugins.vim
-so ~/.vim/maps.vim
-so ~/.vim/plugins-config.vim
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+so ~/.config/vim/plugins.vim
+so ~/.config/vim/maps.vim
+so ~/.config/vim/plugins-config.vim
 
 "TEMA
-"colorscheme solarized
 "set background=light     " Usa modo obscuro
+"colorscheme solarized
 set background=dark     " Usa modo obscuro
 colorscheme dracula
-"set background=dark     " Usa modo obscuro
+"colorscheme ayu"
+let ayucolor="mirage"   " for dark version of theme dark, light, mirage
 "Funcionamiento general
 set nocompatible        " Activar modo de no compatibilidad con vi
 set helplang=es         " Idioma para la ayuda de mendajes
@@ -21,7 +24,8 @@ set number              " Muestra numeracion de lineas
 set relativenumber      " Activa numeros relativos
 set noshowmode          " No mostrar el modo actual (ya lo muestra la barra de estado)
 set cursorline          " Ilumina la linea activa por el cursor
-
+set relativenumber      " Usa numeros relativos
+set nowrap              " Evita que se creen nuevas filas si la linea es larga"
 set termguicolors
 set shortmess+=c
 set undofile
@@ -41,7 +45,7 @@ set shiftround
 set sw=2
 set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete\ Mono:h12.6  
 set foldcolumn=1
-
+"
 " Busqueda
 set hlsearch            " Ilimina todas las apariciones de la cadena buscada
 set incsearch           " Busqueda incremental
@@ -51,12 +55,6 @@ set cmdheight=1         " Better display for messages
 set updatetime=300      " You will have bad experience for diagnostic messages when it's default 4000.
 
 
-:augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-:augroup END
-
 au BufNewFile,BufRead *.py
     \ set expandtab       |" No se insertan tabulador si no espacios es blanco
     \ set autoindent      |" Mantiene el sangrado de la linea precedente
@@ -64,37 +62,3 @@ au BufNewFile,BufRead *.py
     \ set softtabstop=4   |" Los espacios que se ingresaran al presionar tab
     \ set shiftwidth=4    |" Tamaño para el sangrado al presionar > <
 
-set splitright
-function! OpenTerminal()
-  " move to right most buffer
-  execute "normal \<C-l>"
-  execute "normal \<C-l>"
-  execute "normal \<C-l>"
-  execute "normal \<C-l>"
-
-  let bufNum = bufnr("%")
-  let bufType = getbufvar(bufNum, "&buftype", "not found")
-
-  if bufType == "terminal"
-    " close existing terminal
-    execute "q"
-  else
-    " open terminal
-    execute "vsp term://zsh"
-
-    " turn off numbers
-    execute "set nonu"
-    execute "set nornu"
-
-    " toggle insert on enter/exit
-    silent au BufLeave <buffer> stopinsert!
-    silent au BufWinEnter,WinEnter <buffer> startinsert!
-
-    " set maps inside terminal buffer
-    execute "tnoremap <buffer> <C-h> <C-\\><C-n><C-w><C-h>"
-    execute "tnoremap <buffer> <C-t> <C-\\><C-n>:q<CR>"
-    execute "tnoremap <buffer> <C-\\><C-\\> <C-\\><C-n>"
-
-    startinsert!
-  endif
-endfunction
