@@ -18,7 +18,7 @@ nnoremap <leader>q :q<CR>
 " Mover
 "Permite buscar archivos y abrirlos
 nmap <Tab><Tab> :Files<CR> 
-nmap <Leader>e :NERDTreeFind<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
 
 
 "Movimiento en documento
