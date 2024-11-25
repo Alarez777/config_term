@@ -27,7 +27,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-surround' "Permite seleccionar un texto y ponerle un caracter
 	Plug 'tpope/vim-repeat' "Sirve para repetir acciones
 	Plug 'tpope/vim-commentary', {'for': ['sh', 'python', 'markdown', 'vim']} "Permite agregar comentarios
-	Plug 'tpope/vim-fugitive' "Control de git desde vim
+	"Plug 'tpope/vim-fugitive' "Control de git desde vim
 	"---------------------------
 	Plug 'easymotion/vim-easymotion' "Movimiento
 	Plug 'scrooloose/nerdtree' "Folders
@@ -41,5 +41,7 @@ call plug#begin('~/.vim/plugged')
 	"Explorador de archivos
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
+	"Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+	"Plug 'lotabout/skim.vim'
 	Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
