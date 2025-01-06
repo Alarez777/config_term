@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "boydaihungst/mediainfo", rev = "ddfd5ec" }, { use = "ahkohd/eza-preview", rev = "5ef05bc" }, { use = "Sonico98/exifaudio", rev = "d794614" }, { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, { use = "pirafrank/what-size", rev = "b23e3a4" }, { use = "boydaihungst/thunar-bulk-rename", rev = "324197c" }, { use = "dedukun/relative-motions", rev = "df97039" }, { use = "dedukun/bookmarks", rev = "35da107" }]
+
+[flavor]
+deps = []
