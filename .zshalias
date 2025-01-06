@@ -9,3 +9,9 @@ alias yt="yt-dlp"
 alias cat="bat -p"
 alias y="yazi"
 alias titlemkv='eza -1 --no-quotes | rg -F ".mkv" | awk -F "." '\''{print "mkvpropedit \"" $0 "\" --edit info --set \"title=" $1 "\""}'\'' | bash'
+
+
+awkuplo() {
+  awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
+}
+
