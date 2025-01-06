@@ -1,0 +1,11 @@
+alias cd="z"
+alias l="eza -glha"
+alias lss="eza -glh --total-size -s size"
+alias ls="eza"
+alias cl="clear"
+alias treev1="/usr/bin/tree"
+alias tree="erd -H --icons -s name"
+alias yt="yt-dlp"
+alias cat="bat -p"
+alias y="yazi"
+alias titlemkv='eza -1 --no-quotes | rg -F ".mkv" | awk -F "." '\''{print "mkvpropedit \"" $0 "\" --edit info --set \"title=" $1 "\""}'\'' | bash'
