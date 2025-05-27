@@ -8,8 +8,12 @@ alias tree="erd -H --icons -s name"
 alias yt="yt-dlp"
 alias cat="bat -p"
 alias y="yazi"
+alias nbmkv='rg -F ".mkv" | awk -F "." '\''{print "mkvpropedit \"" $0 "\" --edit info --set \"title=" $1 "\""}'\'' | bash'
 alias titlemkv='eza -1 --no-quotes | rg -F ".mkv" | awk -F "." '\''{print "mkvpropedit \"" $0 "\" --edit info --set \"title=" $1 "\""}'\'' | bash'
 alias tv="tidy-viewer"
+alias subs='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge -A -D -M --no-chapters --no-global-tags \"" $0 "\" -o \"subs/" $0 ".mka\""}'\'''
+alias addsubs='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge -S \"" $0 "\" \"subs/" $0 ".mka\" -o \"vf/" $0 "\""}'\'''
+alias remuxmkv='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge \"" $0 "\" -o \"vf/" $0 "\""}'\'''
 
 awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'

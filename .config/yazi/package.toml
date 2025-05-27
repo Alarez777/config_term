@@ -1,5 +1,42 @@
-[plugin]
-deps = [{ use = "boydaihungst/mediainfo", rev = "ddfd5ec" }, { use = "ahkohd/eza-preview", rev = "5ef05bc" }, { use = "Sonico98/exifaudio", rev = "d794614" }, { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, { use = "pirafrank/what-size", rev = "b23e3a4" }, { use = "boydaihungst/thunar-bulk-rename", rev = "324197c" }, { use = "dedukun/relative-motions", rev = "df97039" }, { use = "dedukun/bookmarks", rev = "35da107" }]
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "ddfd5ec"
+hash = "30f1eb92543be9624503cb79d03dbd19"
+
+[[plugin.deps]]
+use = "ahkohd/eza-preview"
+rev = "5ef05bc"
+hash = "72355a6c8b7c8de6ed4dda0f98f86fee"
+
+[[plugin.deps]]
+use = "Sonico98/exifaudio"
+rev = "d794614"
+hash = "a8e15d3c21c02a5af41d46ed04778a02"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "8be4d27"
+hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "b23e3a4"
+hash = "98e5f5af3efd3ba8bc2db0720187cc83"
+
+[[plugin.deps]]
+use = "boydaihungst/thunar-bulk-rename"
+rev = "324197c"
+hash = "48dfb3568db501966f28e4b7ee9a6e1d"
+
+[[plugin.deps]]
+use = "dedukun/relative-motions"
+rev = "df97039"
+hash = "395940d2b22941e0acb1232579c9d4cf"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "35da107"
+hash = "fd34cd65230077697e9240ec6ee49931"
 
 [flavor]
 deps = []
