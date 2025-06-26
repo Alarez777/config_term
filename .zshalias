@@ -18,3 +18,23 @@ alias remuxmkv='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge \"" $0 "
 awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
 }
+
+ffetch_latest() {
+  local tag=$(curl -s https://api.github.com/repos/fastfetch-cli/fastfetch/releases/latest | jq -r '.tag_name')
+  local arch=$(dpkg --print-architecture)
+  local deb_file="fastfetch-latest.deb"
+
+  echo "Descargando Fastfetch $tag para $arch..."
+  wget -q "https://github.com/fastfetch-cli/fastfetch/releases/download/${tag}/fastfetch-linux-${arch}.deb" -O "$deb_file"
+
+  if [[ -f "$deb_file" ]]; then
+    echo "Instalando..."
+    apt install -y ./"$deb_file"
+    echo "Limpiando archivo temporal..."
+    rm -f "$deb_file"
+    echo "Fastfetch actualizado a $tag"
+  else
+    echo "Error al descargar el paquete."
+  fi
+}
+
