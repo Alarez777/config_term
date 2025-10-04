@@ -19,7 +19,7 @@ awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
 }
 
-ffetch_latest() {
+update_fastfetch() {
   local tag=$(curl -s https://api.github.com/repos/fastfetch-cli/fastfetch/releases/latest | jq -r '.tag_name')
   local arch=$(dpkg --print-architecture)
   local deb_file="fastfetch-latest.deb"
