@@ -13,6 +13,7 @@ alias subs='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge -A -D -M --n
 alias addsubs='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge -S \"" $0 "\" \"subs/" $0 ".mka\" -o \"vf/" $0 "\""}'\'''
 alias remuxmkv='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge \"" $0 "\" -o \"vf/" $0 "\""}'\'''
 alias ccat='/usr/bin/cat'
+alias fdremux='fd -e mkv -d 1 . -x mkvmerge --no-attachments "{}" -o "vf/{}"'
 
 awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
