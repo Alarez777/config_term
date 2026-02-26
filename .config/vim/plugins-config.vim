@@ -1,3 +1,10 @@
+"  tabline
+augroup FixTabline
+	autocmd!
+	autocmd ColorScheme * hi! link TabLineFill Normal
+	autocmd ColorScheme * hi! link TabLine StatusLineNC
+	autocmd ColorScheme * hi TabLineSel guibg=#1B222B guifg=#E6E1CF gui=bold ctermbg=235 ctermfg=254 cterm=bold
+augroup END
 "  nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1

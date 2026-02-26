@@ -9,10 +9,13 @@ so ~/.config/vim/plugins-config.vim
 "TEMA
 "set background=light     " Usa modo obscuro
 "colorscheme solarized
+" colorscheme dracula
 set background=dark     " Usa modo obscuro
-colorscheme dracula
+colorscheme ayu
+" let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
 "colorscheme ayu"
-let ayucolor="mirage"   " for dark version of theme dark, light, mirage
 "Funcionamiento general
 set nocompatible        " Activar modo de no compatibilidad con vi
 set helplang=es         " Idioma para la ayuda de mendajes

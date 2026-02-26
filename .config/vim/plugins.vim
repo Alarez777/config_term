@@ -2,8 +2,8 @@
 call plug#begin('~/.vim/plugged')
 	"Temas
 	"Plug 'skbolton/embark' " Theme embark
-	Plug 'dracula/vim', { 'name': 'dracula' } " Theme dracula
-	"Plug 'ayu-theme/ayu-vim' " Theme ayu
+	"Plug 'dracula/vim', { 'name': 'dracula' } " Theme dracula
+	Plug 'ayu-theme/ayu-vim' " Theme ayu
 	"Plug 'morhetz/gruvbox' " Theme gruvbox
 	"Plug 'sonph/onehalf', { 'rtp': 'vim' } "Theme onehalf
 	"Plug 'ayu-theme/ayu-vim' " or other package manager
