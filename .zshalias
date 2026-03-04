@@ -18,6 +18,9 @@ alias fdremuxa='fd -e mkv -d 1 . -x mkvmerge --no-attachments "{}" -o "vf/{}"'
 alias nd="neovide"
 alias nv="nvim"
 alias xpra="GTK_THEME=Adwaita:dark xpra"
+alias dmesg='dmesg -T'
+alias ddmesg='dmesg'
+
 
 awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
