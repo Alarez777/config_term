@@ -20,7 +20,21 @@ alias nv="nvim"
 alias xpra="GTK_THEME=Adwaita:dark xpra"
 alias dmesg='dmesg -T'
 alias ddmesg='dmesg'
+alias xcpr='xcp -w0 -r'
 
+
+# Mounts
+# 192.168.2.10 (minipc)
+alias m10-start='sudo systemctl reset-failed mnt-hdd3tb.mount mnt-10handbrake.mount mnt-ps2rw.mount && sudo systemctl start mnt-hdd3tb.mount mnt-10handbrake.mount mnt-ps2rw.mount'
+
+# 192.168.2.16 (nas)
+alias m16-start='sudo systemctl reset-failed mnt-nNAS.mount mnt-nNAS_lectura.mount mnt-nNAS_audio.mount mnt-nNAS_alarez.mount && sudo systemctl start mnt-nNAS.mount mnt-nNAS_lectura.mount mnt-nNAS_audio.mount mnt-nNAS_alarez.mount'
+
+# 192.168.2.19 (laptop)
+alias m19-start='sudo systemctl reset-failed mnt-187descargas.mount mnt-187handbrake.mount && sudo systemctl start mnt-187descargas.mount mnt-187handbrake.mount'
+#
+#todo
+alias todo-start='m10-start; m16-start; m19-start'
 
 awkuplo() {
   awk '{for(i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) substr($i,2)}; 1'
