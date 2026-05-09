@@ -6,7 +6,7 @@ alias cl="clear"
 alias treev1="/usr/bin/tree"
 alias tree="erd -H --icons -s name"
 alias yt="yt-dlp"
-alias cat="bat -p"
+alias cat="bat -P --style=header,plain"
 alias y="yazi"
 alias tv="tidy-viewer"
 alias subs='fd -e mkv -e mp4 -d 1 | sort | awk '\''{print "mkvmerge -A -D -M --no-chapters --no-global-tags \"" $0 "\" -o \"subs/" $0 ".mka\""}'\'''
